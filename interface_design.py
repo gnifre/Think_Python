@@ -12,14 +12,24 @@ def test_turtle():
     # Back to 1988!
     little_turtle = turtle.Turtle()
     print(little_turtle)
-    little_turtle.fd(100)
-    little_turtle.lt(90)
-    little_turtle.fd(100)
-    little_turtle.lt(90)
-    little_turtle.fd(100)
-    little_turtle.lt(90)
-    little_turtle.fd(100)
+    paint_square(little_turtle)
+
+    # Another using for
+    turtle.home()
+    for i in range(4):
+        little_turtle.rt(90)
+        little_turtle.fd(200)
+
     turtle.mainloop()
+
+def paint_square(little_turtle):
+    little_turtle.fd(100)
+    little_turtle.lt(90)
+    little_turtle.fd(100)
+    little_turtle.lt(90)
+    little_turtle.fd(100)
+    little_turtle.lt(90)
+    little_turtle.fd(100)
 
 
 # Press the green button in the gutter to run the script.
