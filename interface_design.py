@@ -12,6 +12,13 @@ def test_turtle():
     # Back to 1988!
     little_turtle = turtle.Turtle()
     print(little_turtle)
+    little_turtle.fd(100)
+    little_turtle.lt(90)
+    little_turtle.fd(100)
+    little_turtle.lt(90)
+    little_turtle.fd(100)
+    little_turtle.lt(90)
+    little_turtle.fd(100)
     turtle.mainloop()
 
 
